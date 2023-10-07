@@ -6,16 +6,7 @@
   "scripts": {
     "install-server": "cd server && npm install",
     "install-client": "cd client && npm install",
-    "install": "npm run install-server && npm run install-client",
-    "server": "cd server && npm run watch",
-    "client": "cd client && npm start",
-    "watch": "concurrently \"npm run server\" \"npm run client\"",
-    "deploy": "npm run build --prefix client && npm run watch --prefix server",
-    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install-all":"npm install && npm install --prefix client && npm install --prefix server"
-  },
-  "keywords": [],
+    "install": "npm run install-server && npm 
   "author": "",
   "license": "ISC",
   "devDependencies": {
